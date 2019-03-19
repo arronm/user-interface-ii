@@ -50,14 +50,48 @@
     float: right;
   }
 
-  /* .hero .cta, .hero .img {
-    display: inline-block;
-    width: 49.5%;
-    height: 600px;
-  } */
-
+  .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
   .hero .cta {
-    height: 600px;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+  }
+
+  .hero .cta h1 {
+    margin-top: 61px;
+    font-size: 76px;
+  }
+
+  .hero .cta h1 span {
+    display: block;
+  }
+
+  .btn {
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .hero .img {
+    width: 49.5%;
+    /* display: inline-block; */
+    float: right;
+}
+
+  .hero .img img {
+    float: right;
+  }
+
+  .hero .img:after {
+    content: "";
+    clear: both;
   }
 </style>
 
@@ -79,9 +113,13 @@
     </header>
     <section class="hero">
       <div class="cta">
-        Innovation On Demand
+        <h1>
+          <span>Innovation</span>
+          <span>On</span>
+          <span>Demand</span>
+        </h1>
         <!-- Possible Span Elements -->
-        <button>Get Started</button> <!-- TODO: Change to Link -->
+        <input type="button" value="Get Started" class="btn">
       </div>
       <div class="img">
         <img src="img/header-img.png" alt="Image of a code snippet.">
