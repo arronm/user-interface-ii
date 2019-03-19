@@ -19,10 +19,6 @@
 
 <!-- Test Styles -->
 <style>
-  *, div, header {
-    border: 1px solid red;
-  }
-
   .container {
     max-width: 876px;
     margin: 25px auto;
@@ -54,6 +50,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 80px;
   }
   
   .hero .cta {
@@ -81,7 +78,6 @@
 
   .hero .img {
     width: 49.5%;
-    /* display: inline-block; */
     float: right;
 }
 
@@ -92,6 +88,24 @@
   .hero .img:after {
     content: "";
     clear: both;
+  }
+
+  hr {
+    margin: 50px 0;
+  }
+
+  [class$="-section-wrapper"] {
+    margin: 35px 0;
+  }
+
+  .top-section-wrapper section {
+    width: 49.5%;
+    display: inline-block;
+  }
+
+  .bottom-section-wrapper section {
+    width: 33%;
+    display: inline-block;
   }
 </style>
 
@@ -118,14 +132,14 @@
           <span>On</span>
           <span>Demand</span>
         </h1>
-        <!-- Possible Span Elements -->
         <input type="button" value="Get Started" class="btn">
       </div>
       <div class="img">
         <img src="img/header-img.png" alt="Image of a code snippet.">
       </div>
     </section>
-    <div class="wrapper">
+    <hr />
+    <div class="top-section-wrapper">
       <section>
         <h2>
           Features
@@ -144,7 +158,9 @@
           Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
         </p>
       </section>
-      <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+    </div>
+    <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
+    <div class="bottom-section-wrapper">
       <section>
         <h2>
           Services
@@ -173,6 +189,7 @@
         </p>
       </section>
     </div>
+    <hr />
     <footer>
       Contact
       <address>
