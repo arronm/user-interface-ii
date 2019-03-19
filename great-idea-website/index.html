@@ -107,6 +107,25 @@
     width: 33%;
     display: inline-block;
   }
+
+  address {
+    margin-bottom: 25px;
+  }
+
+  address span {
+    display: block;
+  }
+
+  .phone, .email {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+  }
 </style>
 
 <body>
@@ -191,16 +210,17 @@
     </div>
     <hr />
     <footer>
-      Contact
+      <h1>
+        Contact
+      </h1>
       <address>
-        123 Way 456 Street
-        Somewhere, USA
+        <span>123 Way 456 Street</span>
+        <span>Somewhere, USA</span>
       </address>
       <div class="phone">1 (888) 888-8888</div>
       <div class="email">sales@greatidea.io</div>
-      <div class="copywrite">Copyright Great Idea! 2019 &copy</div>
+      <div class="copyright">Copyright Great Idea! 2019 &copy</div>
     </footer>
   </div>
 </body>
-
 </html>
